@@ -39,7 +39,7 @@ sudo cp -r $updatedir/{bin,lib,shared,webapps} $workdir/ 2>> ./error.log
 cp $updatedir/conf/app_home/logback.xml $workdir/conf/app_home/ 2>> ./error.log
 
 echo "cp index.html file" >> ./error.log
-cp $backupdir/tomcat/webapps/ROOT/index.html $workdir/webapps/ROOT/ 2>> ./error.log
+sudo cp $backupdir/tomcat/webapps/ROOT/index.html $workdir/webapps/ROOT/ 2>> ./error.log
 
 echo "change mode files" >> ./error.log
 sudo chmod +x $workdir/bin/*.sh 2>> ./error.log
