@@ -37,3 +37,5 @@ cp $backupdir/tomcat/webapps/ROOT/index.xml $workdir/conf/webapps/ROOT/
 #change mode files
 chmod +x $workdir/bin/*.sh
 
+exit 0
+
